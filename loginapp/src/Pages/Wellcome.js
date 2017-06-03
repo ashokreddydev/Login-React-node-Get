@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 
 
 class Wellcome extends Component {
@@ -12,7 +14,13 @@ class Wellcome extends Component {
       
             }
       }
-
+          componentDidMount() {
+    axios.get(`http://localhost:3000/data`)
+      .then(res => {
+        console.log(res.data)
+        
+      });
+  }
     
     
   render() {
