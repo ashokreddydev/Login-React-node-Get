@@ -15,7 +15,7 @@ class Wellcome extends Component {
             }
       }
           componentDidMount() {
-    axios.get(`http://localhost:3000/data`)
+    axios.get(`http://localhost:1994/data`)
       .then(res => {
         console.log(res.data)
         
